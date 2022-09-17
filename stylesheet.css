@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {/*全体の設定*/
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  a {/*紫色消し*/
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .header {/*ヘッダー全体設定*/
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 120px;
+    width: 1875px;
+    position: fixed;
+    z-index: 10;
+    border-bottom: solid 5px black;
+  }
+  
+ .header-logo {/*ヘッダーのロゴ設定*/
+    width: 300px;
+    padding-right: 100px;
+    float: left;
+    padding: 13px 10px;
+    margin-left: 20px;
+
+ }
+
+ .header-list a{/*ヘッダーのリスト設定*/
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-top: 6px;
+    padding:  40px 40px;
+    font-size: 20px;
+ }
+
+ .header-list a:hover{/*ヘッダーのリスト選択時設定*/
+  border-top: solid 4px;
+  padding: 36px 40px;
+ }
+
+.top-wrapper{/*ページのトップ要素*/
+  padding: 120px 0 100px 0;
+  background-size: cover;
+}
+
+h1{/*トップのスローガン設定（画像にする）*/
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+h2{/*wrapperごとのサブタイトル設定*/
+  padding-top: 125px;
+  font-size: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.news-wrapper{
+  padding: 180px 0 0 0;
+}
+
+.twitter-timeline{/*ツイッターのタイムライン設定(publish.twitter.com)*/
+  padding: 40px 40px;
+  border: solid 4px black;
+}
+
+ .top-right-wrapper{
+  float: right;
+ }
+
+  footer{/*フッターの設定*/
+  height: 350px;
+  border-top: solid 5px black;
+  padding: 20px 0px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ }
+
+ footer p{/*FOLLOW OFFICIAL ACCOUNT*/
+  color: black;
+  font-size: 30px;
+ }
+
+ .logo{/*フッター用のロゴ（オリジナルロゴだとダサいので文字だけ）*/
+  padding-top: 20px;
+  width: 250px;
+  float: center;
+ }
+
+ .btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.instagram {/*インスタのボタン*/
+  background-color: #000000;
+  margin-right: 10px;
+}
+
+.twitter {/*ツイッターのボタン*/
+  background-color: #000000;
+}
+
+.btn {/*ボタンの設定*/
+  border: solid 2px;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.btn:hover {/*ボタンを押したときの設定*/
+  color: black;
+  background-color: white;
+}
+
+.fa {/*fontawesomeからのTwitterとInstagramロゴ設定*/
+    margin-right: 15px;
+}
