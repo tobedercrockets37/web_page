@@ -14,12 +14,36 @@
 
   p{
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
+  }
+
+  ul{
+    text-align: left;
+    font-size: 19px;
+  }
+
+  h1{/*トップのスローガン設定（画像にする）*/
+    text-align: center;
+    background-color: black;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+  h2{/*wrapperごとのサブタイトル設定*/
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
+  h3{
+    padding-top: 20px;
+    text-align: left;
+    font-size: 30px;
   }
 
   .container {
-    width: 100%;
-    padding: 0 15px;
+    width: 1170px;
+    padding: 0  100px;
     margin: 0 auto;
   }
 
@@ -28,7 +52,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     height: 120px;
-    width: 1875px;
+    width: 1905px;
     position: fixed;
     z-index: 10;
     border-bottom: solid 5px black;
@@ -48,27 +72,29 @@
     margin-top: 6px;
     padding:  40px 40px;
     font-size: 20px;
+    transition: 0.4s;
   }
 
   .header a:hover{/*ヘッダーのリスト選択時設定*/
-  border-top: solid 5px;
-  padding: 35px 40px;
+  background-color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
  }
 
 .top-wrapper{/*ページのトップ要素*/
   height: 1100px;
+  width: 1900px;
   padding: 120px 0 0 0;
   /*background-image*/
   background-size: cover;
-  border-bottom: solid 4px black;/*後で消す*/
+  /*border-bottom: solid 4px black;/*後で消す*/
 }
 
-h1{/*トップのスローガン設定（画像にする）*/
-  text-align: center;
-  background-color: black;
-  color: white;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+.element-wrapper{
+  padding: 100px 0 0 0;
+}
+
+.wrap{
+  padding: 120px 0 0 0;
 }
 
 .top-images{/*TOPページの複数画像を毎５秒変わるように*/
@@ -81,17 +107,6 @@ h1{/*トップのスローガン設定（画像にする）*/
   float: right;
 }
 
-h2{/*wrapperごとのサブタイトル設定*/
-  padding-top: 200px;
-  font-size: 50px;
-}
-
-.tl{
-  display: inline-block;
-
-}
-
-
 .twitter-timeline{/*ツイッターのタイムライン設定(publish.twitter.com)*/
   border: solid 4px black;
   padding: 20px 0px;
@@ -103,19 +118,28 @@ h2{/*wrapperごとのサブタイトル設定*/
 
 footer{/*フッターの設定*/
   height: 350px;
+  width: 1905px;
   border-top: solid 5px black;
+  margin-top: 100px;
   padding: 20px 0px;
   background-color: rgb(255, 255, 255);
   text-align: center;
-  display: flex;
-  justify-content: center;
  }
 
  footer p{/*FOLLOW OFFICIAL ACCOUNT*/
   color: black;
   font-size: 30px;
+  margin-bottom: -10px;
  }
 
+ .flex{
+  display: flex;
+  padding-left: 55px;
+ }
+
+ .flex a{
+  padding-top: 60px;
+ }
 
 .btn {/*ボタンの設定*/
   border: solid 2px;
@@ -138,7 +162,13 @@ footer{/*フッターの設定*/
     margin-right: 15px;
 }
 
+.hinoki{
+  width: 250px;
+  margin-top: 20px;
+}
+
 .logo{/*フッター用のロゴ（オリジナルロゴだとダサいので文字だけ）*/
   width: 250px;
   float: center;
+  margin-top: 10px;
  }
