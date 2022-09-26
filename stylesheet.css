@@ -1,174 +1,190 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {/*全体の設定*/
+}
+
+body {
+    /*全体の設定*/
     margin: 0;
     font-family: 游ゴシック, "Yu Gothic", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ W3", "Hiragino Kaku Gothic Pro", "Noto Sans JP", sans-serif;
     text-align: center;
-  }
-  
-  a {/*紫色消し*/
-    text-decoration: none;
-  }
+}
 
-  p{
+a {
+    /*紫色消し*/
+    text-decoration: none;
+}
+
+p {
     text-align: center;
     font-size: 19px;
-  }
+}
 
-  ul{
+ul {
     text-align: left;
     font-size: 19px;
-  }
+}
 
-  h1{/*トップのスローガン設定（画像にする）*/
+h1 {
+    /*トップのスローガン設定（画像にする）*/
     text-align: center;
     background-color: black;
     color: white;
     writing-mode: vertical-rl;
     text-orientation: upright;
-  }
+}
 
-  h2{/*wrapperごとのサブタイトル設定*/
+h2 {
+    /*wrapperごとのサブタイトル設定*/
     padding-top: 50px;
-    font-size: 50px;
-  }
+    font-size: 45px;
+}
 
-  h3{
+h3 {
     padding-top: 20px;
     text-align: left;
     font-size: 30px;
-  }
+}
 
-  .container {
+.container {
     width: 1170px;
-    padding: 0  100px;
+    padding: 0 100px;
     margin: 0 auto;
-  }
+}
 
-  .header {/*ヘッダー全体設定*/
+.header {
+    /*ヘッダー全体設定*/
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     margin-bottom: 20px;
     height: 120px;
-    width: 1905px;
+    width: 100%;
     position: fixed;
     z-index: 10;
     border-bottom: solid 5px black;
-  }
-  
- .header-logo {/*ヘッダーのロゴ設定*/
-    width: 300px;
+}
+
+.header-logo {
+    /*ヘッダーのロゴ設定*/
+    width: 30%;
     padding-right: 100px;
     float: left;
     padding: 13px 10px;
     margin-left: 20px;
- }
+}
 
-  .header a{
+.header a {
     color: rgb(0, 0, 0);
     float: right;
-    margin-top: 6px;
-    padding:  40px 40px;
-    font-size: 20px;
+    padding: 4%;
+    font-size: 40%;
     transition: 0.4s;
-  }
-
-  .header a:hover{/*ヘッダーのリスト選択時設定*/
-  background-color:rgb(0, 0, 0);
-  color:rgb(255, 255, 255);
- }
-
-.top-wrapper{/*ページのトップ要素*/
-  height: 1100px;
-  width: 1900px;
-  padding: 120px 0 0 0;
-  /*background-image*/
-  background-size: cover;
-  /*border-bottom: solid 4px black;/*後で消す*/
 }
 
-.element-wrapper{
-  padding: 100px 0 0 0;
+.header a:hover {
+    /*ヘッダーのリスト選択時設定*/
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
-.wrap{
-  padding: 120px 0 0 0;
+.top-wrapper {
+    /*ページのトップ要素*/
+    height: 1100px;
+    width: 1900px;
+    padding: 120px 0 0 0;
+    /*background-image*/
+    background-size: cover;
+    /*border-bottom: solid 4px black;/*後で消す*/
 }
 
-.top-images{/*TOPページの複数画像を毎５秒変わるように*/
-  width: 1300px;
+.element-wrapper {
+    padding: 100px 0 0 0;
 }
 
-.slogan{/*"同志社のロケットを..."*/
-  width: 180px;
-  margin-right: 230px;
-  float: right;
+.wrap {
+    padding: 120px 0 0 0;
 }
 
-.twitter-timeline{/*ツイッターのタイムライン設定(publish.twitter.com)*/
-  border: solid 4px black;
-  padding: 20px 0px;
+.top-images {
+    /*TOPページの複数画像を毎５秒変わるように*/
+    width: 1300px;
 }
 
-.instagram-timeline{
-  border: solid 4px black;
+.slogan {
+    /*"同志社のロケットを..."*/
+    width: 180px;
+    margin-right: 230px;
+    float: right;
 }
 
-footer{/*フッターの設定*/
-  height: 350px;
-  width: 1905px;
-  border-top: solid 5px black;
-  margin-top: 100px;
-  padding: 20px 0px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
- }
-
- footer p{/*FOLLOW OFFICIAL ACCOUNT*/
-  color: black;
-  font-size: 30px;
-  margin-bottom: -10px;
- }
-
- .flex{
-  display: flex;
-  padding-left: 55px;
- }
-
- .flex a{
-  padding-top: 60px;
- }
-
-.btn {/*ボタンの設定*/
-  border: solid 2px;
-  margin-top: 25px;
-  padding: 12px 30px;
-  font-size: 20px;
-  background-color:rgb(0, 0, 0);
-  color: white;
-  display: inline-block;
-  border-radius: 4px;
-  transition: 0.4s;
+.twitter-timeline {
+    /*ツイッターのタイムライン設定(publish.twitter.com)*/
+    border: solid 4px black;
+    padding: 20px 0px;
 }
 
-.btn:hover {/*ボタンを押したときの設定*/
-  color: black;
-  background-color: white;
+.instagram-timeline {
+    border: solid 4px black;
 }
 
-.fa {/*fontawesomeからのTwitterとInstagramロゴ設定*/
+footer {
+    /*フッターの設定*/
+    height: 350px;
+    width: 1905px;
+    border-top: solid 5px black;
+    margin-top: 100px;
+    padding: 20px 0px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+footer p {
+    /*FOLLOW OFFICIAL ACCOUNT*/
+    color: black;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.flex {
+    display: flex;
+    padding-left: 55px;
+}
+
+.flex a {
+    padding-top: 60px;
+}
+
+.btn {
+    /*ボタンの設定*/
+    border: solid 2px;
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    /*ボタンを押したときの設定*/
+    color: black;
+    background-color: white;
+}
+
+.fa {
+    /*fontawesomeからのTwitterとInstagramロゴ設定*/
     margin-right: 15px;
 }
 
-.hinoki{
-  width: 250px;
-  margin-top: 20px;
+.hinoki {
+    width: 250px;
+    margin-top: 20px;
 }
 
-.logo{/*フッター用のロゴ（オリジナルロゴだとダサいので文字だけ）*/
-  width: 250px;
-  float: center;
-  margin-top: 10px;
- }
+.logo {
+    /*フッター用のロゴ（オリジナルロゴだとダサいので文字だけ）*/
+    width: 250px;
+    float: center;
+    margin-top: 10px;
+}
