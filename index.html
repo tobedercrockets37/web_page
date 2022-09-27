@@ -14,32 +14,16 @@
         <div class="container">
             <img class="header-logo" href="index.html" src="./file/picture/derc_logo.png">
             <a href="form.html"><b>お問い合わせ</b></a>
-            <a href="donation.html"><b>Donation</b></a>
-            <a href="recruit.html"><b>Recruit</b></a>
-            <a href="about.html"><b>About us</b></a>
-            <a href="index.html"><b>HOME</b></a>
+            <a href="donation.html"><b>寄付のお願い</b></a>
+            <a href="recruit.html"><b>メンバー募集</b></a>
+            <a href="about.html"><b>活動について</b></a>
+            <a href="index.html"><b>ホーム</b></a>
         </div>
     </div>
 
     <div class="top-wrapper">
         <img class="slogan" src="web_page/slogan.png">
-        <img class="top-images" id="mypic" src="./file/picture/top-image01.png" width="1300px">
-        <script>
-            var pics_src = new Array("./file/picture/top-image01.png", "");
-            var num = -1;
-
-            slideshow_timer();
-
-            function slideshow_timer() {
-                if (num == 1) {
-                    num = 0;
-                } else {
-                    num++;
-                }
-                document.getElementById("mypic").src = pics_src[num];
-                setTimeout("slideshow_timer()", 3000);
-            }
-        </script>
+        <img class="top-images" id="mypic" src="./file/picture/top-image01.png">
     </div>
 
     <div id="element-wrapper">
@@ -61,13 +45,15 @@
 </body>
 
 <footer>
-    <p>SPECIAL THANKS</p>
+    <div class="container">
+    <p>SPONSOR</p>
     <a href="https://www.koki-holdings.co.jp/"><img class="hinoki" src="./file/picture/hikoki.png"></a>
     <p>FOLLOW OFFICIAL ACCOUNTS</p>
     <a href="https://www.instagram.com/derc928/" class="btn instagram"><span class="fa fa-instagram"></span>Instagram</a>
     <a href="https://twitter.com/DERC50700666" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
     <p></p>
-    <a href="index.html"><img class="logo" src=derc-logo-footer.png></a>
+    <a href="index.html"><img class="logo" src="./file/picture/derc-logo-footer.png"></a>
+    </div>
 </footer>
 
 </html>
