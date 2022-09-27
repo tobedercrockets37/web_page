@@ -75,8 +75,8 @@ h3 {
 .header a {
     color: rgb(0, 0, 0);
     float: right;
-    padding: 4%;
-    font-size: 50%;
+    padding: 5% 4%;
+    font-size: 79%;
     transition: 0.4s;
 }
 
@@ -129,7 +129,6 @@ h3 {
 footer {
     /*フッターの設定*/
     height: 350px;
-    width: 1905px;
     border-top: solid 5px black;
     margin-top: 100px;
     padding: 20px 0px;
