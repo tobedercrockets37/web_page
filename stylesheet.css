@@ -27,10 +27,9 @@ ul {
 h1 {
     /*トップのスローガン設定（画像にする）*/
     text-align: center;
-    background-color: black;
+    padding-top: 12%;
+    font-size: 400%;
     color: white;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
 }
 
 h2 {
@@ -90,9 +89,9 @@ h3 {
     height: 1100px;
     width: 1900px;
     padding: 120px 0 0 0;
-    background-image: url("./file/picture/top-image01.png");
+    background-image: url("./file/picture/top-image.png");
     background-size: cover;
-    /*border-bottom: solid 4px black;/*後で消す*/
+    border-bottom: solid 4px black;/*後で消す*/
 }
 
 .element-wrapper {
