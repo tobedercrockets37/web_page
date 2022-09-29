@@ -24,14 +24,6 @@ ul {
     font-size: 19px;
 }
 
-h1 {
-    /*トップのスローガン設定（画像にする）*/
-    text-align: center;
-    padding-top: 12%;
-    font-size: 400%;
-    color: white;
-}
-
 h2 {
     /*wrapperごとのサブタイトル設定*/
     padding-top: 50px;
@@ -54,7 +46,6 @@ h3 {
     /*ヘッダー全体設定*/
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    margin-bottom: 20px;
     height: 13%;
     width: 100%;
     position: fixed;
@@ -67,15 +58,16 @@ h3 {
     width: 25%;
     float: left;
     padding: 13px 10px;
-    margin-left: 20px;
+    top: 0;
 }
 
 .header a {
     color: rgb(0, 0, 0);
     float: right;
     padding: 4% 2%;
-    font-size: 100%;
+    font-size: 120%;
     transition: 0.4s;
+    top: 0;   
 }
 
 .header a:hover {
@@ -86,8 +78,8 @@ h3 {
 
 .top-wrapper {
     /*ページのトップ要素*/
-    height: 1100px;
-    width: 1900px;
+    height: 970px;
+    width: 100%;
     padding: 120px 0 0 0;
     background-image: url("./file/picture/top-image02.png");
     background-size: cover;
@@ -100,28 +92,6 @@ h3 {
 
 .wrap {
     padding: 120px 0 0 0;
-}
-
-.top-images {
-    /*TOPページの複数画像を毎５秒変わるように*/
-    width: 1300px;
-}
-
-.slogan {
-    /*"同志社のロケットを..."*/
-    width: 180px;
-    margin-right: 230px;
-    float: right;
-}
-
-.twitter-timeline {
-    /*ツイッターのタイムライン設定(publish.twitter.com)*/
-    border: solid 4px black;
-    padding: 20px 0px;
-}
-
-.instagram-timeline {
-    border: solid 4px black;
 }
 
 footer {
