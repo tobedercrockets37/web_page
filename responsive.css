@@ -7,28 +7,95 @@
         display: block !important;
       }
 
-      .top-wrapper{
-        background-image: url("./file/picture/top-image03.png");
-    }
-}
-
-@media all and (max-width: 670px) {
-    .header a{
-        display: none;
-      }
-
-      .menu-icon{
-        display: block !important;
-      }
-
       .header-logo {
         width: 150px;
         float: left;
         padding: 10px 10px;
         top: 0;
     }
+}
+
+@media all and (max-width: 670px) {
+
+    .container {
+        padding: 0 6px;
+        margin: 0 auto;
+    }
 
     .top-wrapper{
         background-image: url("./file/picture/top-image03.png");
     }
+
+    p {
+        text-align: center;
+        font-size: 1rem;
+        
+    }
+    
+    ul {
+        text-align: left;
+        font-size: 15px;
+        padding-right: 20px;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+        color: white;
+        text-align: left;
+        float: bottom;
+        padding-top: 33%;
+        padding-left: 20px;
+        opacity: 0.7;
+    }
+    
+    h2 {
+        /*wrapperごとのサブタイトル設定*/
+        padding-top: 0px;
+        font-size: 20px;
+    }
+    
+    h3 {
+        padding-top: 10px;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    
+        .header a{
+            display: none;
+          }
+    
+          .menu-icon{
+            display: block !important;
+          }
+    
+          .top-wrapper{
+            background-image: url("./file/picture/top-image03.png");
+        }
+    
+        .btn {
+            /*ボタンの設定*/
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 10px 12px;
+        }
+
+        footer p {
+            /*FOLLOW OFFICIAL ACCOUNT*/
+            color: black;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .hinoki {
+            width: 150px;
+            margin-top: 0;
+        }
+        
+        .logo {
+            /*フッター用のロゴ（オリジナルロゴだとダサいので文字だけ）*/
+            width: 150px;
+            float: center;
+            margin-top: 10px;
+        }
 }
