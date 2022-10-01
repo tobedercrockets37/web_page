@@ -6,6 +6,10 @@
       .menu-icon{
         display: block !important;
       }
+
+      .top-wrapper{
+        background-image: url("./file/picture/top-image03.png");
+    }
 }
 
 @media all and (max-width: 670px) {
