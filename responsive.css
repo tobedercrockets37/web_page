@@ -16,4 +16,15 @@
       .menu-icon{
         display: block !important;
       }
+
+      .header-logo {
+        width: 150px;
+        float: left;
+        padding: 10px 10px;
+        top: 0;
+    }
+
+    .top-wrapper{
+        background-image: url("./file/picture/top-image03.png");
+    }
 }
