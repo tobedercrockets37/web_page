@@ -1,7 +1,19 @@
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1029px) {
+    .header a{
+        display: none;
+      }
 
+      .menu-icon{
+        display: block !important;
+      }
 }
 
 @media all and (max-width: 670px) {
+    .header a{
+        display: none;
+      }
 
+      .menu-icon{
+        display: block !important;
+      }
 }
