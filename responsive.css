@@ -1,4 +1,4 @@
-@media all and (max-width: 1029px) {
+@media all and (max-width: 1029px) {/*タブレット対応*/
     .header a{
         display: none;
       }
@@ -7,15 +7,9 @@
         display: block !important;
       }
 
-      .header-logo {
-        width: 150px;
-        float: left;
-        padding: 10px 10px;
-        top: 0;
-    }
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 670px) {/*スマホ対応*/
 
     .container {
         padding: 0 6px;
@@ -60,10 +54,20 @@
         font-size: 18px;
     }
     
-    
-        .header a{
-            display: none;
-          }
+    .container {/*幅の調整*/
+        max-width: 600px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .element-wrapper{
+
+    }
+
+    .header a{
+          display: none;
+            }
     
           .menu-icon{
             display: block !important;

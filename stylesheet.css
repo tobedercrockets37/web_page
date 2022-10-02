@@ -9,13 +9,12 @@ body {
     text-align: center;
 }
 
-.menu-icon {
-    color: rgb(0, 0, 0);
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none !important;
-  }
+.container {/*幅の調整*/
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 a {
     /*紫色消し*/
@@ -55,13 +54,6 @@ h3 {
     font-size: 30px;
 }
 
-.container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .header {
     /*ヘッダー全体設定*/
     background-color: rgb(255, 255, 255);
@@ -69,16 +61,15 @@ h3 {
     height: 10%;
     width: 100%;
     position: fixed;
-    z-index: 10;
-    border-bottom: solid 5px black;
+    z-index: 999;
+    border-bottom: solid 3px black;
 }
 
 .header-logo {
     /*ヘッダーのロゴ設定*/
-    width: 180px;
+    width: 15%;
     float: left;
-    padding: 10px 10px;
-    top: 0;
+    padding-top: 10px;
 }
 
 .header a {
@@ -166,7 +157,7 @@ footer p {
     margin-right: 15px;
 }
 
-.hinoki {
+.hinoki {/*スポンサーロゴ*/
     width: 250px;
     margin-top: 20px;
 }
@@ -177,3 +168,11 @@ footer p {
     float: center;
     margin-top: 10px;
 }
+
+.menu-icon {/*３本線のメニューバー*/
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none !important;
+  }
