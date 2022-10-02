@@ -73,6 +73,7 @@ h3 {
 }
 
 .header a {
+    /*ヘッダー要素*/
     color: rgb(0, 0, 0);
     float: right;
     padding: 2.7% 2%;
