@@ -1,4 +1,5 @@
 @media all and (max-width: 1029px) {/*タブレット対応*/
+
     .header-logo{
         width: 140px;
         padding-top: 25px;
@@ -13,6 +14,7 @@
         display: block !important;
       }
 
+      
 }
 
 @media all and (max-width: 670px) {/*スマホ対応*/
