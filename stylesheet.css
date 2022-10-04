@@ -170,6 +170,12 @@ footer p {
     margin-top: 10px;
 }
 
-.hamburger {
-  display : none !important;
+.icon {
+    width: 25px;
+    padding-right: 5px;
+    fill: white;
+}
+
+.icon:hover{
+    fill: black;
 }
