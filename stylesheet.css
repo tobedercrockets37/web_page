@@ -58,10 +58,10 @@ h3 {
     /*ヘッダー全体設定*/
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    height: 10%;
+    height: 90px;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     border-bottom: solid 3px black;
 }
 
@@ -69,14 +69,14 @@ h3 {
     /*ヘッダーのロゴ設定*/
     width: 180px;
     float: left;
-    padding-top: 18px;
+    margin-top: 1.3%;
 }
 
 .header a {
     /*ヘッダー要素*/
     color: rgb(0, 0, 0);
     float: right;
-    padding: 2.7% 2%;
+    padding: 29px 2%;
     font-size: 120%;
     transition: 0.4s;
     top: 0;   
