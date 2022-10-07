@@ -93,7 +93,7 @@ h3 {
     height: 970px;
     width: 100%;
     padding: 120px 0 0 0;
-    background-image: url("./file/picture/top-image02.png");
+    background-image: url("./file/picture/top-image02.jpg");
     background-size: cover;
     border-bottom: solid 4px black;/*後で消す*/
 }
@@ -179,3 +179,4 @@ footer p {
 .icon:hover{
     fill: black;
 }
+
