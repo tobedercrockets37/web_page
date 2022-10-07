@@ -1,7 +1,7 @@
 @media all and (max-width: 1029px) {/*タブレット対応*/
 
 h2{
-    padding-top: 30px;
+    margin-top: 40px;
 }
 
     .header-logo{
@@ -17,6 +17,23 @@ h2{
     .menu-icon{
         display: block !important;
       }
+
+      .responsive-element{
+        margin-top: 120px;
+      }
+
+    .area{/*ボタンの設定*/
+            width: 100vw;
+            padding: 10px 120px;
+            font-size: 20px;
+            background-color: rgb(78, 78, 78);
+            color: white;
+            transition: 0.4s;
+    }
+
+    .area :hover{
+        
+    }
 }
 
 @media all and (max-width: 670px) {/*スマホ対応*/
