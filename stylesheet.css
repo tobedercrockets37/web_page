@@ -95,8 +95,8 @@ h3 {
     padding: 100px 0 0 0;
 }
 
-.responsive-element .btn{
-    display: none !important; 
+.responsive-element{
+    display: none;
 }
 
 .wrap {
@@ -105,9 +105,9 @@ h3 {
 }
 
 footer {/*フッターの設定*/
-    height: 350px;
+    height: 210px;
     border-top: solid 5px black;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 20px 0px;
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -148,6 +148,10 @@ footer p {/*FOLLOW OFFICIAL ACCOUNT*/
 .hinoki {/*スポンサーロゴ*/
     width     : 250px;
     margin-top: 20px;
+}
+
+.fa{
+    margin-right: 10px;
 }
 
 .logo {
