@@ -76,7 +76,7 @@ h3 {
     /*font-size: 30px;*/
 }
 
-.header {/*ヘッダー全体設定*/
+.header_section {/*ヘッダー全体設定*/
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     height: 90px;
@@ -88,7 +88,7 @@ h3 {
 }
 
 .header_img{
-    position: absolute;
+    
 }
 
 .header-logo {/*ヘッダーのロゴ設定*/
@@ -101,7 +101,7 @@ h3 {
      
 }
 
-.header a {/*ヘッダー要素*/
+.header_section a {/*ヘッダー要素*/
     color: rgb(35, 43, 65);
     float: right;
     padding: 29px 2%;
@@ -110,7 +110,7 @@ h3 {
     top: 0;   
 }
 
-.header a:hover {/*ヘッダーのリスト選択時設定*/
+.header_section a:hover {/*ヘッダーのリスト選択時設定*/
     background-color: rgb(35, 43, 65);
     color: rgb(255, 255, 255);
 }

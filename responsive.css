@@ -10,7 +10,7 @@ h2{
         padding-left: 5px;
     }
 
-    .header a{
+    .header_section a{
         display: none;
       }
 
@@ -22,14 +22,16 @@ h2{
         display: block;
         margin-top: 120px;
       }
-
-    .area{/*ボタンの設定*/
-            width: 100vw;
-            padding: 10px 120px;
-            font-size: 20px;
-            background-color: rgb(0, 0, 0);
+/*ボタンの設定*/
+    .area{
+            width: 100%;
+            padding: 5px 5px;
+            display: flex;
+            font-size: 16px;
+            background-color: rgb(35, 43, 65);
             color: white;
             transition: 0.4s;
+            justify-content: center;
     }
 
     .area :hover{
@@ -67,7 +69,7 @@ h2{
     
     h1{
         /*font-size: 1.5rem;*/
-        color: white;
+        color: rgb(35, 43, 65);
         text-align: left;
         float: bottom;
         padding-top: 33%;
@@ -78,7 +80,7 @@ h2{
     h2 {
         /*wrapperごとのサブタイトル設定*/
         padding-top: 0px;
-        font-size: 30px;
+        /*font-size: 30px;*/
     }
     
     h3 {
@@ -92,6 +94,13 @@ h2{
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
+    }
+
+    .inner{
+        width: 75%;
+        margin: auto;
+        padding: 0;
+        max-width: 100%;
     }
 
     .element-wrapper{
@@ -109,18 +118,19 @@ h2{
           .top-wrapper{
             background-image: url("./file/picture/top-image03.png");
         }
-    
+    /*
         .btn {
-            /*ボタンの設定*/
-            font-size: 15px;
+            ボタンの設定
+            font-size: 8px;
             margin-top: 10px;
             padding: 10px 12px;
         }
+    */
 
         footer p {
             /*FOLLOW OFFICIAL ACCOUNT*/
-            color: black;
-            font-size: 20px;
+            color: rgb(35, 43, 65);
+            /*font-size: 20px;*/
             margin-bottom: 5px;
         }
 
