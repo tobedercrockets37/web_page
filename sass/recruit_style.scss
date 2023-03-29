@@ -1,0 +1,716 @@
+$color-main: #1a2031;
+$color-accent: #E81919;
+$color-text: #333333;
+
+$layout-width-inner: 1200px;
+
+//ブレークポイント
+$breakpoints: (
+    "ssp": "(max-width: 414px)",
+    "sp": "(min-width: 415px) and (max-width: 767px)",
+    "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner})",
+    "pc": "(min-width: #{$layout-width-inner})",
+);
+
+//メディアクエリー
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+//h1, h2, h3, h4, h5, h6の基本設定
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+//innerの基本設定
+.inner{
+    width: $layout-width-inner;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mq('tab'){
+        width: 85%;
+        padding: 0 23px;
+    }
+
+    @include mq('sp'){
+        width: 80%;
+        min-width: 90%;
+        padding: 0 16px;
+    }
+
+    @include mq('ssp'){
+        width: 80%;
+        min-width: 90%;
+        padding: 0 16px;
+    }
+}
+
+//bodyの基本設定
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #fff;
+    color: $color-text;
+
+    @include mq('ssp'){
+        font-size: 14px;
+    }
+}
+
+
+//imgの基本設定
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+//unordered list & ordered list の基本設定
+ul,
+ol{
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+}
+
+//a tagの基本設定
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+//sectionの基本設定
+.section{
+    padding: 100px 0 120px ;
+
+    @include mq($breakpoint: 'sp') {
+        padding: 50px 0 60px;
+    }
+
+    @include mq('ssp'){
+        padding: 50px 0 60px;
+    }
+
+}
+
+//section titleの基本設定
+.titles{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 28px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        background: $color-main;
+
+        @include mq('sp') {
+            width: 50%;
+            height: 3px;
+        }
+
+        @include mq('ssp'){
+            width: 50%;
+            height: 3px;
+        }
+        
+    }
+
+    @include mq('tab') {
+        font-size: 30px;
+    }
+
+    @include mq('sp') {
+        font-size: 22px;
+        padding-bottom: 18px;
+    }
+
+    @include mq('ssp'){
+        font-size: 20px;
+    }
+}
+
+.header{
+    background-color: $color-main;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+
+    @include mq('sp'){
+        height: 80px;
+    }
+
+    @include mq('ssp'){
+        height: 80px;
+    }
+}    
+
+.header__title{
+    padding-left: 20px;
+    color: #fff;
+
+    @include mq('sp'){
+        padding: 0;
+        width: 40%;
+    }
+
+    @include mq('ssp'){
+        padding: 0;
+        width: 40%;
+    }
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: 0;
+    right: -120%;
+    width:100%;
+    height: 100%;/*ナビの高さ*/
+    background:#d5d5d4;
+    /*動き*/
+    transition: all 0.9s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+    color: $color-main;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+    position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+    top:28px;
+    right: 15px;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+
+    @include mq('sp'){
+        top: 20px;
+    }
+
+    @include mq('ssp'){
+        top: 20px;
+    }
+}
+  
+/*×に変化*/  
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ef9636;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+    top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+    top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+    top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.about{
+    background: #fff;
+}
+
+.about__inner{
+    width: 65%;
+}
+
+.main__title{
+    margin: 250px 0 10px 0;
+    text-align: center;
+
+    @include mq('sp'){
+       padding-top: 40px;
+    }
+}
+
+.section__title{
+    text-align: left;
+    margin: 60px 0 30px 0;
+}
+
+.section__inner{
+    text-align: left;
+    padding-left: 40px;
+}
+
+.detail{
+    text-align: left;
+    padding-left: 40px;
+}
+
+.numbered_list{
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.to__sns{
+    text-align: center;
+    margin-bottom: 80px;
+
+    a{
+        color: $color-accent;
+    }
+}
+
+.list_qaa > label {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+.list_qaa > label > input {
+    display: none;
+}
+.list_qaa > label > dt,
+.list_qaa > label > label > dd {
+    position: relative;
+    padding: 1em 1em 1em 3.5em;
+    font-size: 15px;
+    border-bottom: 1px solid currentColor;
+    background-color: #fff;
+}
+.list_qaa > label > dt::before,
+.list_qaa > label > label > dd::before {
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    transform: translateY(-50%);
+    font-size: 2em;
+}
+.list_qaa > label > dt {
+    z-index: 1;
+}
+.list_qaa > label > dt::before {
+    content: "Q";
+}
+.list_qaa > label > label > dd::before {
+    content: "A";
+}
+.list_qaa > label > dt::after {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    right: -1em;
+    transform: translateY(-50%) rotate(135deg);
+    width: 0.5em;
+    height: 0.5em;
+    border-top: 2px solid #3388dd;
+    border-right: 2px solid #3388dd;
+    content: "";
+}
+.list_qaa > label > label > dd {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateY(-2em);
+    margin: 0px;
+    visibility: hidden;
+}
+.list_qaa > label > input:checked ~ label > dd {
+    position: relative;
+    transform: translateY(0px);
+    visibility: visible;
+    transition: 0.5s;
+}
+
+footer{
+    background: linear-gradient(to bottom, #495fa0, #0e1119);
+    padding: 60px 0 24px;
+    color: #fff;
+
+    @include mq('sp'){
+        padding-top: 30px;
+        padding-bottom: 14px;
+    }
+
+    @include mq('ssp'){
+        padding-top: 30px;
+        padding-bottom: 14px;
+    }
+}
+
+.footer__content{
+    display: flex;
+    margin-bottom: 30px;
+    height: 50px;
+
+    @include mq('tab'){
+        margin-bottom: 15px;
+    }
+
+    @include mq('sp'){
+        display: block;
+    }
+
+    @include mq('ssp'){
+        display: block;
+    }
+}
+
+.footer__left{
+    width: 85%;
+    justify-content: center;
+
+    @include mq('tab'){
+        width: 80%;
+    }
+
+    @include mq('sp'){
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    @include mq('ssp'){
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-evenly;
+
+    li{
+
+        @include mq('tab'){
+            font-size: 14px;
+        }
+
+        &:not(:first-child){
+            margin-left: 40px;
+
+            @include mq('tab'){
+                margin-left: 20px;
+            }
+
+            @include mq('sp'){
+                margin-left: 20px;
+            }
+
+            @include mq('ssp'){
+                margin-left: 20px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    @include mq('sp'){
+        display: none;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    @include mq('ssp'){
+        display: none;
+        width: 100%;
+        margin-top: 24px;
+    }
+    
+}
+
+.footer__right{
+    width: 15%;
+
+    @include mq('tab'){
+        width: 20%;
+    }
+
+    @include mq('sp'){
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    @include mq('ssp'){
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
+.footer__sns{
+    display: flex;
+    justify-content: right;
+
+    @include mq('sp'){
+        justify-content: center;
+    }
+
+    @include mq('ssp'){
+        justify-content: center;
+    }
+
+    li{
+        &:not(:first-child){
+            margin-left: 16px;
+            
+        }
+
+        a{
+
+            img{
+                width: 30px;
+            }
+        }
+    }
+
+}
+
+.footer__logo{
+    a{
+
+        img{
+            width: 205px;
+        }
+    }
+
+}
+
+.footer__bottom{
+    text-align: left;
+    margin: 10px 0 30px;
+
+    @include mq('tab'){
+        width:75%;
+        font-size: 14px;
+        margin: 10px 0 15px;
+
+    }
+
+    @include mq('sp'){
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
+.footer__address{
+    font-size: 14px;
+    
+    @include mq('sp'){
+        font-size: 10.5px;
+        margin-top: 8px;
+        width: 100%;
+        text-align: left;
+    }
+
+    @include mq('ssp'){
+        font-size: 10px;
+        margin-top: 8px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.footer__tel{
+    margin-top: 14px;
+    font-size: 14px;
+
+    @include mq('tab'){
+        margin-top: 10px;
+    }
+
+    @include mq('sp'){
+        font-size: 10.5px;
+        margin-top: 7px;
+        text-align: left;
+    }
+
+    @include mq('ssp'){
+        font-size: 10px;
+        margin-top: 7px;
+        text-align: left;
+    }
+}
+
+.footer__mail{
+    margin-top: 14px;
+
+    @include mq('tab'){
+        margin-top: 10px;
+    }
+
+    @include mq('sp'){
+        font-size: 10.5px;
+        margin-top: 7px;
+    }
+
+    @include mq('ssp'){
+        font-size: 10px;
+        margin-top: 7px;
+    }
+}
+
+.footer__copy{
+    margin-top: 46px;
+    font-size: 14px;
+    text-align: center;
+
+    @include mq('sp'){
+        margin-top: 23px;
+    }
+
+    @include mq('ssp'){
+        margin-top: 23px;
+    }
+}
+
+.to_top{
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .3s;
+    color: #fff;
+    background: #ef9636;
+    
+    
+    /*   デフォルトは非表示 */
+        opacity: 0;
+    
+
+    &:hover {
+      box-shadow: 0 0 10px;
+    }
+
+    @include mq('sp'){
+        right: 12px;
+        bottom: 12px;
+    }
+
+    @include mq('ssp'){
+        right: 12px;
+        bottom: 12px;
+    }
+        img{
+            width: 60px;
+
+            @include mq('sp'){
+                width: 40px;
+            }
+
+            @include mq('ssp'){
+                width: 40px;
+            }
+
+        }   
+}
+
+
+
+
