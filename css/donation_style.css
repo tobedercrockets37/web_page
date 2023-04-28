@@ -320,6 +320,19 @@ a {
 .detail p a {
   color: rgb(36, 5, 239);
 }
+.detail ul{
+    display: flex;
+    justify-self: left;
+}
+.detail li{
+  list-style: none;
+}
+
+.sponsor_img{
+  width: 200px;
+  height: auto;
+  margin-right: 30px;
+}
 
 .bold {
   font-weight: bold;
