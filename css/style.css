@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+/* main */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: 0 0 30px 0;
+    background-color: rgb(48, 20, 79);
+    text-align: right;
+}
+
+.inner {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+    color: white;
+}
+
+.button {
+    margin: 0 10px 0 1080px;
+    color: white;
+    background-color: rgb(48, 20, 79);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+}
+
+ul {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+@media (max-width: 767px){
+    ul {
+        display: grid;
+    } 
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    li {
+        &:first-child{
+            margin-top: 30px;
+        }
+    } 
+}
+
+article {
+    margin: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.yohaku {
+    padding: 45px 0 55px 0;
+}
+
+.yohaku2 {
+    padding: 45px 0 20px 0;
+}
+
+
+.daimoji {
+    font-size: 60px;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .daimoji{
+        font-size: 40px;
+    }
+}
+@media (max-width: 767px){
+    .daimoji{
+       font-size: 17px;
+    }   
+}
+
+
+p {
+    margin: 0;
+    padding: 0 55px 15px 55px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    p{
+        padding: 0 30px 12px 30px;
+    }
+}
+@media (max-width: 767px){
+    p {
+       padding: 0 20px 14px 20px;
+    } 
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main_img_img{
+    text-align: center;
+}
+
+.main_img{
+    margin: 5px;
+    width: 240px;
+    height: auto; 
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .main_img{
+        width: 175px;
+    }
+}
+
+.komoji {
+    font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .komoji{
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px){
+    .komoji {
+        font-size: 12px;
+    } 
+}
+
+.red {
+    color: red
+}
+
+.button2 {
+    margin: 50px 40% 70px 40%;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    background-color: rgb(132, 145, 195);
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .button2{
+        margin: 40px 37% 60px 37%;
+    }
+}
+@media (max-width: 767px){
+    .button2{
+        margin: 40px 10% 60px 10%;
+    }
+    
+}
+
+.daimoji2 {
+    margin: 0 25px 70px 25px;
+    font-size: 40px;
+}
+@media (max-width: 767px){
+    .daimoji2{
+        font-size: 20px;
+    } 
+}
+
+.under {
+    border-bottom: double 6px #824880;
+}
+
+.imgyoko {  
+    display: inline-block;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .imgyoko{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px){
+    .imgyoko{
+        display: block;
+    }
+}
+
+.bunyoko {
+    display: inline-block;
+    width: 44%;
+}
+@media (max-width: 767px){
+    .bunyoko {
+        display: block;
+        width: 64%;
+    } 
+}
+
+.bunyoko2 {
+    width: 40%;
+    display: inline-block;
+}
+@media (max-width: 767px){
+    .bunyoko2 {
+        display: block;
+        margin: auto;
+        width: 60%;
+    } 
+}
+
+.bunyoko3 {
+    display: inline-block;
+    margin-right: 35px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    .bunyoko3 {
+        display: block;
+        width: 84%;
+    } 
+}
+
+.baloon {
+    margin-bottom: 20px;
+    margin-left: 17px;
+    padding-top: 20px;
+    background-color: orange;
+    border-radius: 30px;
+}
+
+
+footer {
+    background-color: rgb(48, 20, 79);
+    padding-bottom: 10px;
+}
+
+h4 {
+    margin: 0;
+    text-align: left;
+}
+
+.sns-btn{
+   text-align: center;
+
+}
+
+.main_img2{
+    width: 50px;
+    height: auto;
+}
+@media (max-width: 767px){
+    .main_img2 {
+        display: ;
+    } 
+}
+
+.yohaku3 {
+    padding: 50px 20px 20px 0;
+}
+
+/* about */
+
+.midashi{
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    .midashi {
+        font-size: 24px;
+    } 
+}
+
+.midashi2{
+    margin-bottom: 30px;
+    color: #824880;
+    font-size: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .midashi2{
+        font-size: 27px;
+    } 
+}
+@media (max-width: 767px){
+    .midashi2 {
+       padding-left: 0;
+       font-size: 20px;
+    } 
+}
+
+.setsumei{
+    padding: 0 95px 55px 150px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .setsumei{
+        padding-right: 75px;
+        padding-left: 100px;
+    } 
+}
+@media (max-width: 767px){
+    .setsumei {
+        padding: 0;
+    } 
+}
+
+.setsumei2{
+    padding: 0  90px 15px 200px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .setsumei2{
+        padding-right: 75px;
+        padding-left: 132px;
+    }   
+}
+@media (max-width: 767px){
+    .setsumei2 {
+       padding: 15px 0;
+       font-size: 12px;
+    } 
+}
+
+.midashi3{
+    margin-left: 80px;
+    padding-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .midashi3{
+        margin-left: 53px;
+    } 
+}
+@media (max-width: 767px){
+    .midashi3 {
+        margin-left: 0;
+        padding-top: 30px;
+    } 
+}
+
+.midashi4{
+    padding: 0 55px 30px 95px;
+    font-size: 17px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .midashi4{
+        padding-left: 85px;
+    }  
+}
+@media (max-width: 767px){
+    .midashi4 {
+        padding: 14px;
+    } 
+}
+
+.marker{
+    background: linear-gradient(transparent 80% ,orange 20%);
+}
+
+
+/* menber */
+
+.yohaku4{
+    margin-left: 60px;
+}
+
+.marker2{
+    background: linear-gradient(transparent 55%, yellow 45%);
+}
+
+
+.blue{
+    color: rgb(132, 145, 195);
+}
+
+
+.under2{
+    text-decoration: underline;
+    color: rgb(132, 145, 195);
+}
+
+.black{
+    color: black;
+}
+
+
+/* support*/
+
+.yohaku5{
+    padding: 0 70px 30px;
+}
+@media (max-width: 767px){
+    .yohaku5 {
+        padding: 0;
+    } 
+}
+
+/* contact */
+
+.sponsor{
+    display: inline-block;
+    margin: 0 30px 20px 105px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    .sponsor {
+        margin: 0;
+    } 
+}
+
+.contact_img{
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
