@@ -373,10 +373,17 @@ h4 {
     margin-left: 60px;
 }
 
+dt{
+    font-weight: bold;
+}
+
+dd{
+    margin-bottom: 2em;
+}
+
 .marker2{
     background: linear-gradient(transparent 55%, yellow 45%);
 }
-
 
 .blue{
     color: rgb(132, 145, 195);
