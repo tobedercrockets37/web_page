@@ -52,7 +52,7 @@ ul {
     } 
 }
 
-li {
+.menu {
     display: inline-block;
     margin: 0 10px;
     text-align: center;
@@ -383,6 +383,10 @@ dd{
 
 .marker2{
     background: linear-gradient(transparent 55%, yellow 45%);
+}
+
+ol{
+    list-style-position: inside;
 }
 
 .blue{
