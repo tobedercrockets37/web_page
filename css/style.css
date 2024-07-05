@@ -44,12 +44,15 @@ a {
 ul {
     padding: 10px;
     margin: 0;
-    list-style: none;
 }
 @media (max-width: 767px){
     ul {
         display: grid;
     } 
+}
+
+.tennashi{
+    list-style: none;
 }
 
 .menu {
